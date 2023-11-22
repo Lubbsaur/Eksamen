@@ -40,6 +40,7 @@ header span img {
 header nav {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 header nav a {
@@ -69,12 +70,6 @@ main section img {
   opacity: 50%; /*https://www.w3schools.com/cssref/css3_pr_opacity.php*/
 }
 
-main section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 main h1 {
   text-align: center;
 }
@@ -84,6 +79,10 @@ main h2 {
 }
 
 main h3 {
+  text-align: center;
+}
+
+main h4 {
   text-align: center;
 }
 
@@ -102,16 +101,84 @@ main p {
   text-align: left;
 }
 
-#contactbutton3 {
+#mobil-h1 {
+  background-image: url(https://itstud.hiof.no/~andersnb/img/skrivebord.jpg); /*Sette bakgrunnsbilde: https://stackoverflow.com/questions/1093955/make-the-image-go-behind-the-text-and-keep-it-in-center-using-css*/
+  width: auto;
+  height: 400px;
+}
+
+#mobil-h1 section {
+  padding: 3rem;
+}
+
+main article {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+main article section {
+  gap: 1rem;
+}
+
+main article i {
   text-align: center;
-  text-decoration: none;
-  padding: 10px;
-  border-style: solid;
-  max-width: 200px;
+  font-size: 30px;
+}
+
+main #section2 {
+  padding: 2rem;
 }
 
 #section3 {
   background-color: #e6bd43;
+  padding: 2.5rem;
+}
+
+#section3 img {
+  width: 100%;
+  height: auto;
+}
+
+#section3 article {
+  padding: 3rem;
+}
+
+#section3 h3 {
+  text-align: left;
+}
+
+#section3 p {
+  text-align: left;
+}
+
+#contactbutton3 {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px;
+  border-style: solid;
+  max-width: 120px;
+  border-color: #000;
+  color: #000;
+  font-weight: bold;
+  margin: 0 0 auto; /*ChatGPT hjalp med margin her for plassering i midten*/
+}
+
+main #section4 {
+  padding: 3rem;
+}
+
+main #section4 h3 {
+  margin-bottom: 3rem;
+}
+
+main #section4 p {
+  margin: 0 0 3rem 0;
+}
+
+#section5 {
+  background-color: #f3f0f1;
 }
 
 /*CSS FOOTER*/
@@ -148,6 +215,22 @@ footer span {
   display: flex;
   gap: 1rem;
   margin-bottom: 0.5rem;
+}
+
+#myBtn { /*https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #252525; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 3px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 }
 
 /*CSS for DESKTOP*/

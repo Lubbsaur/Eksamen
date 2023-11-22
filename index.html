@@ -11,7 +11,6 @@
 </head>
 <body>
   <div id="grid">
-    
     <header>
       <span>
         <a href="index.html" id="logo">
@@ -32,7 +31,6 @@
           <h1>Compelling headline</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
           <a href="about.html" class="contactbutton2">Read more about our services</a>
-          <img src="img/skrivebord.jpg" alt="Digital accessories on a desk">
         </section>
       </div>
       
@@ -40,34 +38,55 @@
         <section>
           <h1>Compelling headline</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-          <a href="about.html" ="contactbutton2">Read more about our services</a>
+          <a href="about.html" class="contactbutton2">Read more about our services</a>
           <video src="img/mountains.mp4" alt="Two paragliders soaring over the landscape" autoplay muted loop>
         </section>
       </div>
 
-      <section>
+      <section id="section2">
         <article>
-          <h2>Engaging subheading. What can<br>
-          you help your visitors with</h2>
+          <h3>Engaging subheading. What can you help your visitors with</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
         </article>
       </section>
 
       <div id="section3">
-      <section>
-        <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
-          <article>
-            <h3>About Our Company</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-          </article>
-        <a href="about.html" id="contactbutton3">Read more about us</a>
-      </section>
-    </div>
+        <section>
+          <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+            <article>
+              <h3>About Our Company</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
+              <a href="about.html" id="contactbutton3">Read more about us</a>
+            </article>
+        </section>
+      </div>
 
-      <section>
+      <section id="section4">
+        <h3>Our Services</h3>
         <article>
-          
+          <i class="fa-solid fa-users"></i>
+          <h4>Branding</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         </article>
+        <article>
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <h4>Branding</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </article>
+        <article>
+          <i class="fa-solid fa-code"></i>
+          <h4>Branding</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </article>
+        <article>
+          <i class="fa-solid fa-wifi"></i>
+          <h4>Branding</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </article>
+      </section>
+
+      <section id="section5">
+
       </section>
     </main>
 
@@ -85,6 +104,29 @@
       </span>
     </footer>
   </div>
-  
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>  <!--https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
 </body>
 </html>
