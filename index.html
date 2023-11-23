@@ -11,6 +11,7 @@
 </head>
 <body>
   <div id="grid">
+    
     <header>
       <span>
         <a href="index.html" id="logo">
@@ -25,12 +26,13 @@
       </nav>
     </header>
 
+    
     <main>
       <div id="mobil-h1">
         <section>
           <h1>Compelling headline</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-          <a href="about.html" class="contactbutton2">Read more about our services</a>
+          <a href="#section4" class="contactbutton2">Read more about our services</a>
         </section>
       </div>
       
@@ -39,13 +41,13 @@
           <h1>Compelling headline</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
           <a href="about.html" class="contactbutton2">Read more about our services</a>
-          <video src="img/mountains.mp4" alt="Two paragliders soaring over the landscape" autoplay muted loop>
+          <video src="img/mountains.mp4" autoplay muted loop></video>
         </section>
       </div>
 
       <section id="section2">
         <article>
-          <h3>Engaging subheading. What can you help your visitors with</h3>
+          <h2>Engaging subheading. What can you help your visitors with</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
         </article>
       </section>
@@ -62,7 +64,7 @@
       </div>
 
       <section id="section4">
-        <h3>Our Services</h3>
+        <h2>Our Services</h2>
         <article>
           <i class="fa-solid fa-users"></i>
           <h4>Branding</h4>
@@ -85,14 +87,22 @@
         </article>
       </section>
 
-      <section id="section5">
-
+      <section id="section5"> <!--Forelesning-->
+        <article>
+          <h2>Sign up for our newsletter</h2>
+          <form >
+              <label hidden for="email-signup"></label>
+              <input type="text" id="email-signup" placeholder="Nora@epost.no" >
+              <button id="signup-btn">Sign me up!</button>
+          </form>
+        </article>
       </section>
     </main>
 
+    
     <footer>
       <nav>
-        <a href="index.html" id="logo">
+        <a href="index.html" id="logo2">
           <img src="img/logo1.png" alt="Rund logo med ordene Iloceam og Pleam">
         </a>
       </nav>
@@ -104,6 +114,7 @@
       </span>
     </footer>
   </div>
+
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>  <!--https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
 
   <script>

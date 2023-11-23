@@ -25,7 +25,71 @@
         <a href="#contact" id="contactbutton">Contact</a>
       </nav>
     </header>
+    
+    <main>
+      <div id="overskrift">
+        <section>
+          <h1>Portfolio</h1>
+        </section>
+      </div>
 
+      <div id="layout-port">
+        <section id="linker">
+          <h2>Explore previous jobs</h2>
+          <hr>
+          <a href="#branding" class="nav-btn">Branding</a>
+          <a href="#design" class="nav-btn">Design</a>
+          <a href="#developement" class="nav-btn">Development</a>
+        </section>
+
+        <section id="branding">
+          <h2>Branding</h2>
+          <hr>
+          <article>
+            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+            <p>Et harum quidem</p>
+          </article>
+          <article>
+            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+            <p>Et harum quidem</p>
+          </article>
+          <article>
+            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+            <p>Et harum quidem</p>
+          </article>
+          <article>
+            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+            <p>Et harum quidem</p>
+          </article>
+        </section>
+
+        <section id="design">
+          <article>
+
+          </article>
+          <article>
+
+          </article>
+          <article>
+
+          </article>
+          <article>
+
+          </article>
+        </section>
+
+        <section id="developement">
+          <article>
+
+          </article>
+          <article>
+
+          </article>
+        </section>
+      </div>
+    </main>
+
+    
     <footer>
       <nav>
         <a href="index.html" id="logo">
@@ -39,6 +103,31 @@
         <i class="fa-brands fa-linkedin"></i>
       </span>
     </footer>
-  </div>  
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>  <!--https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
 </body>
 </html>
