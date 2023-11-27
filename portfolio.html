@@ -9,6 +9,7 @@
   <link rel="icon" href="img/logo1.png" type="image/x-icon"> <!--https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/-->
   <title>Portfolio</title>
 </head>
+
 <body>
   <div id="grid">
     
@@ -19,10 +20,12 @@
         </a>
       </span>
       <nav>
-        <a href="index.html" id="home">Home</a>
-        <a style="font-weight: bold; text-decoration: underline; text-decoration-color: #e6bd43;" href="portfolio.html" id="portfolio">Portfolio</a>
-        <a href="about.html" id="about">About</a>
-        <a href="about.html#contact-us" id="contactbutton">Contact</a>
+        <ul>
+          <li><a href="index.html" id="home">Home</a></li>
+          <li><a style="font-weight: bold; text-decoration: underline; text-decoration-color: #e6bd43;" href="portfolio.html" id="portfolio">Portfolio</a></li>
+          <li><a href="about.html" id="about">About</a></li>
+          <li><a href="about.html#contact-us" id="contactbutton">Contact</a></li>
+        </ul>
       </nav>
     </header>
     
@@ -37,60 +40,68 @@
         <section id="linker">
           <h2>Explore previous jobs</h2>
           <hr>
-          <a href="#branding" class="nav-btn">Branding</a>
-          <a href="#design" class="nav-btn">Design</a>
-          <a href="#developement" class="nav-btn">Development</a>
+            <ul>
+              <li><a href="#branding" class="nav-btn">Branding</a></li>
+              <li><a href="#design" class="nav-btn">Design</a></li>
+              <li><a href="#developement" class="nav-btn">Development</a></li>
+            </ul>
         </section>
 
         <section id="branding">
           <h2>Branding</h2>
           <hr>
-          <article>
-            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
-            <p>Et harum quidem</p>
-          </article>
-          <article>
-            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
-            <p>Et harum quidem</p>
-          </article>
-          <article>
-            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
-            <p>Et harum quidem</p>
-          </article>
-          <article>
-            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
-            <p>Et harum quidem</p>
-          </article>
+          <div id="port1">
+            <article>
+              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <p>Et harum quidem</p>
+            </article>
+            <article>
+              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <p>Et harum quidem</p>
+            </article>
+            <article>
+              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <p>Et harum quidem</p>
+            </article>
+            <article>
+              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <p>Et harum quidem</p>
+            </article>
+          </div>
         </section>
 
         <section id="design">
           <h2>Design</h2>
           <hr>
-          <article>
-            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
-            <p>Et harum quidem</p>
-          </article>
-          <article>
-            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
-            <p>Et harum quidem</p>
-          </article>
-          <article>
-            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
-            <p>Et harum quidem</p>
-          </article>
+          <div id="port2">
+            <article>
+              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <p>Et harum quidem</p>
+            </article>
+            <article>
+              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <p>Et harum quidem</p>
+            </article>
+            <article>
+              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <p>Et harum quidem</p>
+            </article>
+          </div>
         </section>
 
         <section id="developement">
           <h2>Developement</h2>
           <hr>
-          <article>
-            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
-            <p>Et harum quidem</p>
-          </article>
-          <article>
-            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
-            <p>Et harum quidem</p>
-          </article>
+          <div id="port3">
+            <article>
+              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <p>Et harum quidem</p>
+            </article>
+            <article>
+              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <p>Et harum quidem</p>
+            </article>
+          </div>
         </section>
       </div>
     </main>
@@ -104,14 +115,15 @@
       </nav>
       <p>Companyrights Companyname 20203</p>
       <span>
-        <i class="fa-brands fa-square-facebook"></i>
-        <i class="fa-brands fa-square-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <ul>
+          <li><a href="https://www.facebook.com" class="fa-brands fa-square-facebook"></a></li> <!--https://stackoverflow.com/questions/65596987/adding-links-to-icons-->
+          <li><a href="https://www.instagram.com/" class="fa-brands fa-square-instagram"></a></li>
+          <li><a href="https://no.linkedin.com/" class="fa-brands fa-linkedin"></a></li>
+        </ul>
       </span>
     </footer>
-  </div>
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>  <!--https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>  <!--https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
 
   <script>
     // Get the button
@@ -134,6 +146,8 @@
       document.documentElement.scrollTop = 0;
     }
     </script>
+
+  </div>
 
 </body>
 </html>
