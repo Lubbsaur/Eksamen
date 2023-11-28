@@ -3,6 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Facebook Meta-->
+  <meta property="og:url" content="https://itstud.hiof.no/~andersnb/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Company name">
+  <meta property="og:description" content="The most innovative company in the field of...">
+  <meta property="og:image" content="https://itstud.hiof.no/~andersnb/img/logo1.png">
+  <!--Twitter Meta-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@companyname">
+  <meta name="twitter:creator" content="@berghjunior">
+  <meta name="twitter:title" content="Company name">
+  <meta name="twitter:description" content="The most innovative company in the field of...">
+  <meta name="twitter:image" content="https://itstud.hiof.no/~andersnb/img/logo1.png">
+  <!--Meta slutt-->
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/red-hat-display-2">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/css/all.css"> <!--For å få linken til å fungere: https://stackoverflow.com/questions/14366158/font-awesome-not-working-icons-showing-as-squares-->
@@ -15,16 +29,16 @@
     
     <header>
       <span>
-        <a href="index.html" id="logo">
-          <img src="img/logo1.png" alt="Rund logo med ordene Iloceam og Pleam"> <!--https://www.contexteditor.org/how-to-add-logo-in-html/-->
+        <a href="index.html" title="Home" id="logo">
+          <img src="img/logo1.png" alt="Circular company-logo"> <!--https://www.contexteditor.org/how-to-add-logo-in-html/-->
         </a>
       </span>
       <nav>
         <ul>
-          <li><a style="font-weight: 900; text-decoration: underline; text-decoration-color: #e6bd43;" href="index.html" id="home">Home</a></li> <!--https://www.shecodes.io/athena/53290-how-to-change-underline-color-in-css-->
-          <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
-          <li><a href="about.html" id="about">About</a></li>
-          <li><a href="about.html#contact-us" id="contactbutton">Contact</a></li> <!--https://www.scaler.com/topics/how-to-link-to-a-specific-part-of-a-page-html/-->
+          <li><a aria-current="page" href="index.html" id="home" style="font-weight: 900; text-decoration: underline; text-decoration-color: #e6bd43;">Home</a></li> <!--https://www.shecodes.io/athena/53290-how-to-change-underline-color-in-css-->
+          <li><a aria-label="link to portfolio page" href="portfolio.html" id="portfolio">Portfolio</a></li>
+          <li><a aria-label="link to about page" href="about.html" id="about">About</a></li>
+          <li><a aria-label="link to contact-section on about page" href="about.html#contact-us" id="contactbutton">Contact</a></li> <!--https://www.scaler.com/topics/how-to-link-to-a-specific-part-of-a-page-html/-->
         </ul>
       </nav>
     </header>
@@ -48,7 +62,7 @@
               <a href="#section4" class="contactbutton2">Read more about our services</a>
             </article>
           </div>
-          <video src="img/mountains.mp4" autoplay muted loop></video>
+          <video aria-label="Video of two paragliders over a fjord" src="img/mountains.mp4" autoplay muted loop></video>          
         </section>
       </div>
 
@@ -60,44 +74,42 @@
       </section>
 
       
-      <section>
-        <div id="section3">
-          <article id="s3-flex1">
-            <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
-          </article>
-          <article id="s3-flex2">
-              <h3>About Our Company</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
-              <a href="about.html" id="contactbutton3">Read more about us</a>
-          </article>
-      </div>
+      <section id="section3">
+        <article id="s3-flex1">
+          <img src="https://placehold.co/400" alt="Placeholder picture">
+        </article>
+        <article id="s3-flex2">
+            <h3>About Our Company</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
+            <a href="about.html" id="contactbutton3">Read more about us</a>
+        </article>
       </section>
       
 
       <section id="section4">
         <h2>Our Services</h2>
-        <div id="flex-icons">
-          <article>
-            <i class="fa-solid fa-users"></i>
-            <h4>Branding</h4>
-            <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
-          </article>
-          <article>
-            <i class="fa-solid fa-cloud-arrow-up"></i>
-            <h4>Branding</h4>
-            <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
-          </article>
-          <article>
-            <i class="fa-solid fa-code"></i>
-            <h4>Branding</h4>
-            <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
-          </article>
-          <article>
-            <i class="fa-solid fa-wifi"></i>
-            <h4>Branding</h4>
-            <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
-          </article>
-        </div>
+          <div id="flex-icons">
+            <article>
+              <i aria-label="icon with tre people" class="fa-solid fa-users"></i>
+              <h4>Branding</h4>
+              <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
+            </article>
+            <article>
+              <i aria-label="icon with cloud upload" class="fa-solid fa-cloud-arrow-up"></i>
+              <h4>Branding</h4>
+              <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
+            </article>
+            <article>
+              <i aria-label="icon with end of html code" class="fa-solid fa-code"></i>
+              <h4>Branding</h4>
+              <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
+            </article>
+            <article>
+              <i aria-label="icon with wifi symbol" class="fa-solid fa-wifi"></i>
+              <h4>Branding</h4>
+              <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
+            </article>
+          </div>
       </section>
 
       <section id="section5"> <!--Forelesning-->
@@ -105,8 +117,8 @@
           <h2>Sign up for our newsletter</h2>
           <form >
               <label hidden for="email-signup"></label>
-              <input type="text" id="email-signup" placeholder="Nora@epost.no" >
-              <button id="signup-btn">Sign me up!</button>
+              <input aria-label="email for signup" type="text" id="email-signup" placeholder="Nora@epost.no" >
+              <button aria-label="send email" id="signup-btn">Sign me up!</button>
           </form>
         </article>
       </section>
@@ -116,15 +128,15 @@
     <footer>
       <nav>
         <a href="index.html" id="logo2">
-          <img src="img/logo1.png" alt="Rund logo med ordene Iloceam og Pleam">
+          <img src="img/logo1.png" alt="Circular company-logo">
         </a>
       </nav>
       <p>Companyrights Companyname 20203</p>
         <nav>
           <ul>
-            <li><a href="https://www.facebook.com" class="fa-brands fa-square-facebook"></a></li> <!--https://stackoverflow.com/questions/65596987/adding-links-to-icons-->
-            <li><a href="https://www.instagram.com/" class="fa-brands fa-square-instagram"></a></li>
-            <li><a href="https://no.linkedin.com/" class="fa-brands fa-linkedin"></a></li>
+            <li><a aria-label="Icon to facebook.com" href="https://www.facebook.com" class="fa-brands fa-square-facebook"></a></li> <!--https://stackoverflow.com/questions/65596987/adding-links-to-icons-->
+            <li><a aria-label="Icon to instagram.com" href="https://www.instagram.com/" class="fa-brands fa-square-instagram"></a></li>
+            <li><a aria-label="Icon to linkedin.com" href="https://no.linkedin.com/" class="fa-brands fa-linkedin"></a></li>
           </ul>
         </nav>
     </footer>

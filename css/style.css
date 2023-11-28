@@ -233,10 +233,14 @@ form input {
   height: 400px;
 }
 
-#overskrift h1 {
+#overskrift article h1 {
   display: flex;
   justify-content: center;
   padding-top: 10rem;
+}
+
+#overskrift article {
+  margin-top: 0;
 }
 
 #layout-port {

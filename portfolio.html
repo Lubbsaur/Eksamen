@@ -3,6 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Facebook Meta-->
+   <meta property="og:url" content="https://itstud.hiof.no/~andersnb/portfolio.html">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="What we have created">
+   <meta property="og:description" content="Our excellence on display">
+   <meta property="og:image" content="https://placehold.co/400">
+   <!--Twitter Meta-->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:site" content="@companyname">
+   <meta name="twitter:creator" content="@berghjunior">
+   <meta name="twitter:title" content="What we have created">
+   <meta name="twitter:description" content="Our excellence on display">
+   <meta name="twitter:image" content="https://placehold.co/400">
+   <!--Meta slutt-->
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/red-hat-display-2">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/css/all.css"> <!--For å få linken til å fungere: https://stackoverflow.com/questions/14366158/font-awesome-not-working-icons-showing-as-squares-->
@@ -15,35 +29,36 @@
     
     <header>
       <span>
-        <a href="index.html" id="logo">
-        <img src="img/logo1.png" alt="Rund logo med ordene Iloceam og Pleam"> <!--https://www.contexteditor.org/how-to-add-logo-in-html/-->
+        <a href="index.html" title="Home" id="logo">
+        <img src="img/logo1.png" alt="Circular company-logo"> <!--https://www.contexteditor.org/how-to-add-logo-in-html/-->
         </a>
       </span>
       <nav>
         <ul>
-          <li><a href="index.html" id="home">Home</a></li>
-          <li><a style="font-weight: 900; text-decoration: underline; text-decoration-color: #e6bd43;" href="portfolio.html" id="portfolio">Portfolio</a></li>
-          <li><a href="about.html" id="about">About</a></li>
-          <li><a href="about.html#contact-us" id="contactbutton">Contact</a></li>
+          <li><a aria-label="link to home page" href="index.html" id="home">Home</a></li>
+          <li><a aria-current="page" href="portfolio.html" id="portfolio" style="font-weight: 900; text-decoration: underline; text-decoration-color: #e6bd43;">Portfolio</a></li>
+          <li><a aria-label="link to about page" href="about.html" id="about">About</a></li>
+          <li><a aria-label="link to contact-section on about page" href="about.html#contact-us" id="contactbutton">Contact</a></li>
         </ul>
       </nav>
     </header>
     
     <main>
-      <div id="overskrift">
-        <section>
+
+      <section id="overskrift">
+        <article>
           <h1>Portfolio</h1>
-        </section>
-      </div>
+        </article>
+      </section>
 
       <div id="layout-port">
         <section id="linker">
           <h2>Explore previous jobs</h2>
           <hr>
             <ul>
-              <li><a href="#branding" class="nav-btn">Branding</a></li>
-              <li><a href="#design" class="nav-btn">Design</a></li>
-              <li><a href="#developement" class="nav-btn">Development</a></li>
+              <li><a aria-label="link to the branding section" href="#branding" class="nav-btn">Branding</a></li>
+              <li><a aria-label="link to the design section" href="#design" class="nav-btn">Design</a></li>
+              <li><a aria-label="link to the developement section" href="#developement" class="nav-btn">Development</a></li>
             </ul>
         </section>
 
@@ -52,19 +67,19 @@
           <hr>
           <div id="port1">
             <article>
-              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <img src="https://placehold.co/400" alt="Placeholder picture">
               <p>Et harum quidem</p>
             </article>
             <article>
-              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <img src="https://placehold.co/400" alt="Placeholder picture">
               <p>Et harum quidem</p>
             </article>
             <article>
-              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <img src="https://placehold.co/400" alt="Placeholder picture">
               <p>Et harum quidem</p>
             </article>
             <article>
-              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <img src="https://placehold.co/400" alt="Placeholder picture">
               <p>Et harum quidem</p>
             </article>
           </div>
@@ -75,15 +90,15 @@
           <hr>
           <div id="port2">
             <article>
-              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <img src="https://placehold.co/400" alt="Placeholder picture">
               <p>Et harum quidem</p>
             </article>
             <article>
-              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <img src="https://placehold.co/400" alt="Placeholder picture">
               <p>Et harum quidem</p>
             </article>
             <article>
-              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <img src="https://placehold.co/400" alt="Placeholder picture">
               <p>Et harum quidem</p>
             </article>
           </div>
@@ -94,11 +109,11 @@
           <hr>
           <div id="port3">
             <article>
-              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <img src="https://placehold.co/400" alt="Placeholder picture">
               <p>Et harum quidem</p>
             </article>
             <article>
-              <img src="https://placehold.co/400" alt="Placeholder picture 400X400 pixels">
+              <img src="https://placehold.co/400" alt="Placeholder picture">
               <p>Et harum quidem</p>
             </article>
           </div>
@@ -110,15 +125,15 @@
     <footer>
       <nav>
         <a href="index.html" id="logo2">
-          <img src="img/logo1.png" alt="Rund logo med ordene Iloceam og Pleam">
+          <img src="img/logo1.png" alt="Circular company-logo">
         </a>
       </nav>
       <p>Companyrights Companyname 20203</p>
         <nav>
           <ul>
-            <li><a href="https://www.facebook.com" class="fa-brands fa-square-facebook"></a></li> <!--https://stackoverflow.com/questions/65596987/adding-links-to-icons-->
-            <li><a href="https://www.instagram.com/" class="fa-brands fa-square-instagram"></a></li>
-            <li><a href="https://no.linkedin.com/" class="fa-brands fa-linkedin"></a></li>
+            <li><a aria-label="Icon to facebook.com" href="https://www.facebook.com" class="fa-brands fa-square-facebook"></a></li>
+            <li><a aria-label="Icon to instagram.com" href="https://www.instagram.com/" class="fa-brands fa-square-instagram"></a></li>
+            <li><a aria-label="Icon to linkedin.com" href="https://no.linkedin.com/" class="fa-brands fa-linkedin"></a></li>
           </ul>
       </nav>
     </footer>
