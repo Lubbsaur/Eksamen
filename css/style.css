@@ -521,7 +521,8 @@ footer ul a {
 
 
 /*CSS for DESKTOP*/
-@media only screen and (min-width: 800px) { /*Både min- og max-width: https://www.w3schools.com/css/css3_mediaqueries_ex.asp*/
+
+@media only screen and (min-width: 800px) { /*https://www.w3schools.com/css/css3_mediaqueries_ex.asp*/
 
   #mobil-h1 {
     display: none;
@@ -833,8 +834,7 @@ footer ul a {
   }
 
   footer ul {
-    margin-right: 1rem;
-    margin-top: 4rem;
+    margin: 2rem 1rem auto;
   }
 
 }

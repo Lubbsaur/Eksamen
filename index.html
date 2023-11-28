@@ -3,33 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Facebook Meta-->
+  <meta name="author" content="Anders Nyvoll Bergh">
+  <meta name="description" content="The most innovative company in the field of...">
+  <!--Facebook Meta https://developers.facebook.com/docs/sharing/webmasters/ -->
   <meta property="og:url" content="https://itstud.hiof.no/~andersnb/index.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Company name">
   <meta property="og:description" content="The most innovative company in the field of...">
-  <meta property="og:image" content="https://itstud.hiof.no/~andersnb/img/logo1.png">
-  <!--Twitter Meta-->
+  <meta property="og:image" content="https://itstud.hiof.no/~andersnb/img/skrivebord.jpg">
+  <!--Twitter Meta https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@companyname">
   <meta name="twitter:creator" content="@berghjunior">
   <meta name="twitter:title" content="Company name">
   <meta name="twitter:description" content="The most innovative company in the field of...">
-  <meta name="twitter:image" content="https://itstud.hiof.no/~andersnb/img/logo1.png">
+  <meta name="twitter:image" content="https://itstud.hiof.no/~andersnb/img/skrivebord.jpg">
   <!--Meta slutt-->
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/red-hat-display-2">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/css/all.css"> <!--For å få linken til å fungere: https://stackoverflow.com/questions/14366158/font-awesome-not-working-icons-showing-as-squares-->
   <link rel="icon" href="img/logo1.png" type="image/x-icon"> <!--https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/-->
-  <title>About Compelling Headline</title>
+  <title>The Worlds Best Company!</title>
 </head>
 
 <body>
   <div id="grid">
     
     <header>
-      <span>
-        <a href="index.html" title="Home" id="logo">
+      <span itemscope itemtype="https://schema.org/OnlineBusiness">
+        <link itemprop="url" href="https://itstud.hiof.no/~andersnb/index.html">
+        <a href="index.html" title="Home" id="logo" itemprop="logo">
           <img src="img/logo1.png" alt="Circular company-logo"> <!--https://www.contexteditor.org/how-to-add-logo-in-html/-->
         </a>
       </span>
@@ -45,9 +48,9 @@
 
     
     <main>
-      <div id="mobil-h1">
+      <div id="mobil-h1" itemscope itemtype="https://schema.org/OnlineBusiness">
         <section>
-          <h1>Compelling headline</h1>
+          <h1 itemprop="name">Compelling headline</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
           <a href="#section4" class="contactbutton2">Read more about our services</a>
         </section>
@@ -74,11 +77,11 @@
       </section>
 
       
-      <section id="section3">
+      <section id="section3" itemscope itemtype="http://schema.org/AboutPage">
         <article id="s3-flex1">
           <img src="https://placehold.co/400" alt="Placeholder picture">
         </article>
-        <article id="s3-flex2">
+        <article id="s3-flex2" itemprop="mainContentOfPage">
             <h3>About Our Company</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
             <a href="about.html" id="contactbutton3">Read more about us</a>
@@ -86,7 +89,7 @@
       </section>
       
 
-      <section id="section4">
+      <section id="section4" itemscope itemtype="http://schema.org/AboutPage">
         <h2>Our Services</h2>
           <div id="flex-icons">
             <article>
@@ -144,10 +147,8 @@
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>  <!--https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
 
   <script>
-    // Get the button
     let mybutton = document.getElementById("myBtn");
-    
-    // When the user scrolls down 20px from the top of the document, show the button
+  
     window.onscroll = function() {scrollFunction()};
     
     function scrollFunction() {
@@ -157,8 +158,7 @@
         mybutton.style.display = "none";
       }
     }
-    
-    // When the user clicks on the button, scroll to the top of the document
+  
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;

@@ -3,34 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Anders Nyvoll Bergh">
+  <meta name="description" content="About our company/Contact">  
   <!--Facebook Meta-->
   <meta property="og:url" content="https://itstud.hiof.no/~andersnb/about.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="About us/Contact">
-  <meta property="og:description" content="Read more about our excellence">
+  <meta property="og:description" content="About our company/Contact">
   <meta property="og:image" content="https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg">
   <!--Twitter Meta-->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@companyname">
   <meta name="twitter:creator" content="@berghjunior">
   <meta name="twitter:title" content="About us/Contact">
-  <meta name="twitter:description" content="Read more about our excellence">
+  <meta name="twitter:description" content="About our company/Contact">
   <meta name="twitter:image" content="https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg">
   <!--Meta slutt-->
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/red-hat-display-2">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/css/all.css"> <!--For å få linken til å fungere: https://stackoverflow.com/questions/14366158/font-awesome-not-working-icons-showing-as-squares-->
-  <link rel="icon" href="img/logo1.png" type="image/x-icon"> <!--https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/-->
+  <link rel="stylesheet" href="css/css/all.css"> 
+  <link rel="icon" href="img/logo1.png" type="image/x-icon"> 
   <title>About</title>
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/Organization">
   <div id="grid">
     
     <header>
       <span>
         <a href="index.html" title="Home" id="logo">
-        <img src="img/logo1.png" alt="Circular company-logo"> <!--https://www.contexteditor.org/how-to-add-logo-in-html/-->
+        <img src="img/logo1.png" alt="Circular company-logo">
         </a>
       </span>
       <nav>
@@ -105,15 +107,14 @@
                   <input type="text" id="subject-input" placeholder="   Branding.." >
                   <label for="message-input">Message</label>
                   <textarea id="message-input" name="Message" cols="30" rows="5"></textarea> <!--https://stackoverflow.com/questions/6262472/multiple-lines-of-input-in-input-type-text-->
-                  <!--<input type="text" id="message-input">-->
                   <button id="signup-btn2">Send message</button>
               </form>
               </article>
-              <article id="flex2">
+              <article id="flex2" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                 <h3>Contact information</h3>
                 <p>Cras semper auctor neque vitae. Donec adipiscing tristique risus nec feugiat in fermentum. Tristique magna sit amet purus gravida quis blandit. Vel pretium lectus quam id leo in vitae.</p>
                 <ul>
-                  <li><i class="fa-solid fa-location-pin"></i><p>&nbsp;&nbsp;B R A Veien 4, 1757 Halden</p></li>
+                  <li><i class="fa-solid fa-location-pin"></i><p itemprop="addressLocality">&nbsp;&nbsp;B R A Veien 4, 1757 Halden</p></li>
                   <li><i class="fa-solid fa-phone"></i><p>69 60 80 00</p></li>
                   <li><i class="fa-solid fa-envelope"></i><a href="postmottak@hiof.no">postmottak@hiof.no</a></li>
                 </ul>
@@ -144,13 +145,11 @@
       </nav>
     </footer>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>  <!--https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
   <script>
-    // Get the button
     let mybutton = document.getElementById("myBtn");
     
-    // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
     
     function scrollFunction() {
@@ -161,12 +160,29 @@
       }
     }
     
-    // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
     </script>
+
+    <script type="application/ld+json">
+      {
+      "@context": "https://schema.org",
+      "@type": "OnlineBusiness",
+      "@id": "https://itstud.hiof.no/~andersnb/index.html",
+      "name": "Company Name",
+      "url": "https://itstud.hiof.no/~andersnb/about.html",
+      "description": "Online Business that has perfected making engaging content",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Halden",
+        "addressCountry": "Norway",
+        "postalCode": "1757",
+        "streetAddress": "B R A Veien 4"
+        }
+      }
+      </script> <!--https://www.semrush.com/blog/schema-markup-for-company-corporations/-->
 
   </div>
   
