@@ -67,7 +67,7 @@ header nav ul {
 }
 
 
-/*CSS MAIN index*/
+/*CSS mobil index*/
 
 main h1 {
   text-align: center;
@@ -225,7 +225,7 @@ form input {
 }
 
 
-/*CSS MAIN portfolio*/
+/*CSS mobil portfolio*/
 
 #overskrift {
   background-image: url(https://itstud.hiof.no/~andersnb/img/skrivebord.jpg);
@@ -295,7 +295,8 @@ form input {
   gap: 1rem;
 }
 
-/*CSS MAIN about*/
+
+/*CSS mobil about*/
 
 #about-overskrift {
   background-image: url(https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg);
@@ -305,7 +306,8 @@ form input {
 }
 
 #about-overskrift article {
-  background-color: #f3f0f1;
+  background-color: #ffffff;
+  opacity: 80%;
   padding: 3rem;
   margin: 3rem;
   display: flex;
@@ -325,13 +327,14 @@ form input {
   background-color: #e6bd43;
   font-weight: bold;
   padding: 20px;
-  max-width: 160px;
+  max-width: 191px;
   text-decoration: none;
   color: #000;
   text-align: left;
   display: flex;
   justify-content: center;
-  margin: 1rem auto;
+  margin: 1rem 0 0 0;
+  font-size: 20px;
 }
 
 #gul-bakgrunn {
@@ -355,7 +358,7 @@ form input {
 
 #contact-bak {
   background-color: #f3f0f1;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 #contact-bak form {
@@ -408,7 +411,7 @@ form input {
   background-color: #e6bd43;
   color: #000;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 20px;
   border-radius: 0px;
   border: 0;
   display: block;
@@ -430,7 +433,7 @@ form input {
 }
 
 #contact-bak i {
-  padding-right: 3rem;
+  padding-right: 2rem;
   line-height: 1.5;
 }
 
@@ -475,12 +478,7 @@ footer p {
   justify-content: center;
 }
 
-footer span {
-  display: flex;
-  justify-content: center;
-}
-
-footer span ul {
+footer ul {
   margin: 0 auto;
   display: flex;
   gap: 2rem;
@@ -488,9 +486,10 @@ footer span ul {
   font-size: 30px;
   list-style: none;
   padding: 0;
+  justify-content: center;
 }
 
-footer span a {
+footer ul a {
   color: #fff;
   background-color: #252525;
 }
@@ -756,7 +755,7 @@ footer span a {
   }
 
   #contactbutton4 {
-    max-width: 160px;
+    max-width: 191px;
     font-weight: 900;
   }
 
@@ -829,7 +828,7 @@ footer span a {
     padding: 0;
   }
 
-  footer span {
+  footer ul {
     margin-right: 1rem;
     margin-top: 4rem;
   }
