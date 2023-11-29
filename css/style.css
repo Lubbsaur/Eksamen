@@ -688,7 +688,6 @@ footer ul a {
   }
   
   #layout-port article {
-    min-width: none;
     max-width: none;
     height: auto;
   }
