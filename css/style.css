@@ -253,7 +253,8 @@ form input {
 }
 
 #layout-port hr {
-  color: #e6bd43;
+  color: #e6bd43; 
+  border-color: #e6bd43; /*https://stackoverflow.com/questions/6382023/changing-the-color-of-an-hr-element*/
   margin-bottom: 3rem;
 }
 
@@ -735,14 +736,17 @@ footer ul a {
   #port3 {
     display: flex;
     gap: 3rem;
+    justify-content: center;
   }
 
   #port3 article:nth-child(1) {
     flex-grow: 1;
+    max-width: 692px;
   }
 
   #port3 article:nth-child(2) {
     flex-grow: 1;
+    max-width: 692px;
   }
 
   #layout-port article:hover {
